@@ -1,0 +1,48 @@
+@use "./variables" as *;
+
+html {
+  font-size: $fontSize;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  line-height: $lineHeight;
+  letter-spacing: $letterSpacing;
+}
+h1 {
+  font-size: $H2FonteSize;
+  font-weight: 700;
+  line-height: $H1LineHeight;
+  letter-spacing: $letterSpacing;
+}
+h2 {
+  font-size: $H1FonteSize;
+  font-weight: 700;
+  line-height: $H1LineHeight;
+  letter-spacing: $letterSpacing;
+}
+h3 {
+  font-size: $H5FonteSize;
+  font-weight: 700;
+  line-height: $H5LineHeight;
+  letter-spacing: $letterSpacing;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: $p2RegularFonteSize;
+  line-height: $p2RegularLineHeight;
+  letter-spacing: $letterSpacing;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}

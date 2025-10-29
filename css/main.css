@@ -1,0 +1,81 @@
+/*
+**Fonte defaul
+*/
+/*Fonte Size*/
+/*Line height*/
+/*
+**Paragraph 1
+*/
+/*Fonte Size*/
+/*Line height*/
+/*
+**Paragraph 2
+*/
+/*Fonte Size*/
+/*Line height*/
+/*
+**Paragraph 3
+*/
+/*Fonte Size*/
+/*Line height*/
+html {
+  font-size: 18px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  line-height: 1.66667;
+  letter-spacing: -0.02rem;
+}
+
+h1 {
+  font-size: 3.55555556rem;
+  font-weight: 700;
+  line-height: auto;
+  letter-spacing: -0.02rem;
+}
+
+h2 {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: auto;
+  letter-spacing: -0.02rem;
+}
+
+h3 {
+  font-size: 1.55555556rem;
+  font-weight: 700;
+  line-height: 2;
+  letter-spacing: -0.02rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.66667;
+  letter-spacing: -0.02rem;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1480px;
+  margin-inline: auto;
+  background-color: #043873;
+}

@@ -1,0 +1,7 @@
+@use "../base/variables" as *;
+
+.container {
+  max-width: 1480px;
+  margin-inline: auto;
+  background-color: $primaryColorDark;
+}

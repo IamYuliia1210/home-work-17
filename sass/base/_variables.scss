@@ -1,0 +1,72 @@
+$primaryColorDark: #043873;
+$primaryColorLight: #4F9CF9;
+$secondaryColorYellow: #FFE492;
+$secondaryColorWhite: #FFFFFF;
+$secondaryColorBlue: #A7CEFC;
+$secondaryColorBlack: #212529;
+
+
+/*
+**Fonte defaul
+*/
+$fontSize: 18px;
+$fontWeight: 400;
+$lineHeight: 1.66667;
+$letterSpacing: -0.02rem;
+
+/*Fonte Size*/
+$H1FonteSize: 4rem;
+$H2FonteSize: 3.55555556rem;
+$H3FonteSize: 3rem;
+$H4FonteSize: 2rem;
+$H5FonteSize: 1.55555556rem;
+/*Line height*/
+$H1LineHeight: auto;
+$H2LineHeight: auto;
+$H3LineHeight: auto;
+$H4LineHeight: auto;
+$H5LineHeight: 2;
+
+/*
+**Paragraph 1
+*/
+
+/*Fonte Size*/
+$p1SemiBoldFonteSize: 1.333333333rem;
+$p1RegularFonteSize: 1.333333333rem;
+/*Line height*/
+$p1SemiBoldLineHeight: 2;
+$p1RegularLineHeight: 1.777777778;
+
+/*
+**Paragraph 2
+*/
+
+/*Fonte Size*/
+$p2SemiBoldFonteSize: 1rem;
+$p2MediumFonteSize: 1rem;
+$p2RegularFonteSize: $fontSize;
+/*Line height*/
+$p2SemiBoldLineHeight: auto;
+$p2MediumLineHeight: 1.2777777778;
+$p2RegularLineHeight: $lineHeight;
+
+/*
+**Paragraph 3
+*/
+
+/*Fonte Size*/
+$p3MediumFonteSize: 0.889rem;
+$p3RegularFonteSize: 0.889rem;
+/*Line height*/
+$p3MediumLineHeight: auto;
+$p3RegularLineHeight: 1.25;
+
+$breakpoints: (
+xs: 0,
+sm: 320px,
+md: 768px,
+lg: 1152px,
+xl: 1200px,
+xxl: 1400px
+);
