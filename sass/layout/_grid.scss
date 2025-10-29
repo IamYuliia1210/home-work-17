@@ -1,7 +1,6 @@
-@use "../base/variables" as *;
+@use "../base" as *;
 
 .container {
   max-width: 1480px;
   margin-inline: auto;
-  background-color: $primaryColorDark;
 }

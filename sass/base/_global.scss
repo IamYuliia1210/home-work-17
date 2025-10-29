@@ -6,6 +6,7 @@ html {
   font-weight: 400;
   line-height: $lineHeight;
   letter-spacing: $letterSpacing;
+  color: $colorBlack;
 }
 h1 {
   font-size: $H2FonteSize;
@@ -24,10 +25,6 @@ h3 {
   font-weight: 700;
   line-height: $H5LineHeight;
   letter-spacing: $letterSpacing;
-}
-
-a {
-  text-decoration: none;
 }
 
 p {

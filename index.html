@@ -9,8 +9,8 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
     rel="stylesheet">
-    <link rel="stylesheet" href="./css/main.css">
-  <title>Document</title>
+  <link rel="stylesheet" href="./css/main.css">
+  <title>Final Project</title>
 </head>
 
 <body>
@@ -18,18 +18,20 @@
     <header class="header">
       <div class="container">
         <a href="#" class="header__logo-link">
-          <img src="./img/Logo.svg" alt="logo" class="header__logo">
+          <svg class="header__logo">
+            <use href="./img/symbol-defs.svg#icon-logo" />
+          </svg>
         </a>
         <nav class="header__navigation">
           <ul class="header__list">
-            <il class="header__item"><a href="#" class="header__link">Products</a></il>
-            <il class="header__item"><a href="#" class="header__link">Solutions</a></il>
-            <il class="header__item"><a href="#" class="header__link">Resources</a></il>
-            <il class="header__item"><a href="#" class="header__link">Pricing</a></il>
+            <li class="header__item"><a href="#" class="header__link">Products</a></li>
+            <li class="header__item"><a href="#" class="header__link">Solutions</a></li>
+            <li class="header__item"><a href="#" class="header__link">Resources</a></li>
+            <li class="header__item"><a href="#" class="header__link">Pricing</a></li>
           </ul>
         </nav>
-        <button type="button" role="button" class="btn header__login">Login</button>
-        <button type="button" role="button" class="btn header__try">Try Whitepace free</button>
+        <button type="button" class="btn header__login">Login</button>
+        <button type="button" class="btn header__try">Try Whitepace free</button>
       </div>
     </header>
   </main>

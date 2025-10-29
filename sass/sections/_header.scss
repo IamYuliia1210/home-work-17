@@ -1,18 +1,36 @@
-@use "./variables" as *;
-@use "./mixins" as *;
-@use "./global" as *;
+@use "../base" as *;
 
-// .header {
-//   &__logo-link {
+.header {
+  background-color: $primaryColorDark;
+  &__logo {
+    width: 191px;
+    height: 34px;
+  }
+    &__list {
+      display: flex;
+      gap: 71px;
+    }
+    &__item {
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        width: 15px;
+        height: 6.6px;
+        transform: translate(30px, -50%);
+        top: 50%;
+        right: 0;
+        background: url("../../img/arrow-down.svg") no-repeat;
+      }
 
-//   }
-//   &__logo 
-//   &__list
-//   &__item
-//   &__link 
-//   &__login
-//   &__try
-// }
+    }
+    &__link  {
+      color: $colorWhite;
+      text-decoration: none;
+    }
+    // &__login
+    // &__try
+}
 
 
 // .btn {
