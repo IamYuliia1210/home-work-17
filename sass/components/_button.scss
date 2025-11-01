@@ -1,0 +1,36 @@
+@use "../base" as *;
+
+.btn {
+  padding-left: 40px;
+  padding-right: 40px;
+  border-radius: 8px;
+  font-size: $p2MediumFonteSize;
+  line-height: $p2MediumLineHeight;
+
+
+  &--medium {
+    padding-top: 18.5px;
+    padding-bottom: 18.5px;
+  }
+   &--yellow {
+    background-color: $colorYellow;
+    color: $primaryColorDark;
+   }
+
+   &--blue {
+     background-color: $primaryColorLight;
+      color: $colorWhite;
+   }
+   &--arrow {
+    display: flex;
+    align-items: center;
+      &::after {
+        display: block;
+        content: "";
+        width: 12px;
+        height: 10px;
+        margin-left: 10px;
+        background: url("../../img/button-arrow.svg") no-repeat;
+      }
+   }
+}

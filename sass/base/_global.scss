@@ -9,19 +9,22 @@ html {
   color: $colorBlack;
 }
 h1 {
-  font-size: $H2FonteSize;
+  font-size: $H1FonteSize;
+  font-family: "Inter", sans-serif;
   font-weight: 700;
   line-height: $H1LineHeight;
   letter-spacing: $letterSpacing;
 }
 h2 {
-  font-size: $H1FonteSize;
+  font-size: $H2FonteSize;
+  font-family: "Inter", sans-serif;
   font-weight: 700;
-  line-height: $H1LineHeight;
+  line-height: $H2LineHeight;
   letter-spacing: $letterSpacing;
 }
 h3 {
   font-size: $H5FonteSize;
+  font-family: "Inter", sans-serif;
   font-weight: 700;
   line-height: $H5LineHeight;
   letter-spacing: $letterSpacing;

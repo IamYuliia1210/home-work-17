@@ -1,37 +1,43 @@
 @use "../base" as *;
 
 .header {
+  height: 92px;
   background-color: $primaryColorDark;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    height: 92px;
+  }
+
   &__logo {
     width: 191px;
     height: 34px;
   }
-    &__list {
-      display: flex;
-      gap: 71px;
-    }
-    &__item {
-      position: relative;
-      &::after {
-        content: "";
-        position: absolute;
-        width: 15px;
-        height: 6.6px;
-        transform: translate(30px, -50%);
-        top: 50%;
-        right: 0;
-        background: url("../../img/arrow-down.svg") no-repeat;
-      }
 
+  &__list {
+    display: flex;
+    gap: 71px;
+  }
+
+  &__item {
+    position: relative;
+    padding-right: 30px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 15px;
+      height: 6.6px;
+      transform: translate(0, -50%);
+      top: 50%;
+      right: 0;
+      background: url("../../img/arrow-down.svg") no-repeat;
     }
-    &__link  {
-      color: $colorWhite;
-      text-decoration: none;
-    }
-    // &__login
-    // &__try
+  }
+
+  &__link {
+    color: $colorWhite;
+    text-decoration: none;
+  }
 }
-
-
-// .btn {
-// }

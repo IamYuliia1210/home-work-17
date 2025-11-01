@@ -28,14 +28,16 @@ html {
 }
 
 h1 {
-  font-size: 3.55555556rem;
+  font-size: 4rem;
+  font-family: "Inter", sans-serif;
   font-weight: 700;
   line-height: auto;
   letter-spacing: -0.02rem;
 }
 
 h2 {
-  font-size: 4rem;
+  font-size: 3.55555556rem;
+  font-family: "Inter", sans-serif;
   font-weight: 700;
   line-height: auto;
   letter-spacing: -0.02rem;
@@ -43,6 +45,7 @@ h2 {
 
 h3 {
   font-size: 1.55555556rem;
+  font-family: "Inter", sans-serif;
   font-weight: 700;
   line-height: 2;
   letter-spacing: -0.02rem;
@@ -71,13 +74,52 @@ button {
   box-sizing: border-box;
 }
 
+.btn {
+  padding-left: 40px;
+  padding-right: 40px;
+  border-radius: 8px;
+  font-size: 1rem;
+  line-height: 1.2777777778;
+  border: none;
+}
+.btn--medium {
+  padding-top: 18.5px;
+  padding-bottom: 18.5px;
+}
+.btn--yellow {
+  background-color: #FFE492;
+  color: #043873;
+}
+.btn--blue {
+  background-color: #4F9CF9;
+  color: #FFFFFF;
+}
+.btn--arrow {
+  display: flex;
+  align-items: center;
+}
+.btn--arrow::after {
+  display: block;
+  content: "";
+  width: 12px;
+  height: 10px;
+  margin-left: 10px;
+  background: url("../../img/button-arrow.svg") no-repeat;
+}
+
 .container {
   max-width: 1480px;
   margin-inline: auto;
 }
 
 .header {
+  height: 92px;
   background-color: #043873;
+}
+.header__container {
+  display: flex;
+  align-items: center;
+  height: 92px;
 }
 .header__logo {
   width: 191px;
@@ -89,13 +131,14 @@ button {
 }
 .header__item {
   position: relative;
+  padding-right: 30px;
 }
 .header__item::after {
   content: "";
   position: absolute;
   width: 15px;
   height: 6.6px;
-  transform: translate(30px, -50%);
+  transform: translate(0, -50%);
   top: 50%;
   right: 0;
   background: url("../../img/arrow-down.svg") no-repeat;
@@ -103,4 +146,25 @@ button {
 .header__link {
   color: #FFFFFF;
   text-decoration: none;
+}
+
+.hero__container {
+  display: flex;
+}
+.hero__container-img {
+  max-width: 824px;
+  height: 549px;
+  background-color: #A7CEFC;
+}
+
+.mr--24 {
+  margin-right: 24px;
+}
+
+.mr--60 {
+  margin-right: 60px;
+}
+
+.ml--auto {
+  margin-left: auto;
 }/*# sourceMappingURL=main.css.map */
