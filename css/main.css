@@ -80,10 +80,24 @@ button {
   border-radius: 8px;
   font-size: 1rem;
   line-height: 1.2777777778;
+  border: none;
+  cursor: pointer;
+}
+.btn--small {
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 .btn--medium {
   padding-top: 18.5px;
   padding-bottom: 18.5px;
+}
+.btn--large {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.btn--px-small {
+  padding-left: 24px;
+  padding-right: 24px;
 }
 .btn--yellow {
   background-color: #FFE492;
@@ -125,15 +139,22 @@ button {
   width: 191px;
   height: 34px;
 }
+.header__navigation {
+  margin-right: 60px;
+}
 .header__list {
   display: flex;
   gap: 71px;
 }
 .header__item {
   position: relative;
+}
+.header__link {
+  color: #FFFFFF;
+  text-decoration: none;
   padding-right: 30px;
 }
-.header__item::after {
+.header__link::after {
   content: "";
   position: absolute;
   width: 15px;
@@ -143,9 +164,8 @@ button {
   right: 0;
   background: url("../../img/arrow-down.svg") no-repeat;
 }
-.header__link {
-  color: #FFFFFF;
-  text-decoration: none;
+.header__login {
+  margin-right: 24px;
 }
 
 .hero {
@@ -180,33 +200,37 @@ button {
   background-color: #A7CEFC;
 }
 
-.work-managment {
+.work-management {
   position: relative;
   padding: 140px 0;
   background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
 }
-.work-managment__container {
+.work-management .project-management__container {
   position: relative;
   display: flex;
   align-items: center;
 }
-.work-managment__container::before {
+.work-management .project-management__container::before {
   content: "";
   position: absolute;
   display: block;
-  top: 22%;
-  left: -15%;
+  top: 0;
+  left: 0;
+  transform: translate(-32%, 28%);
   width: 603px;
   height: 449px;
   background-image: url(../../img/backgroud.svg);
   background-repeat: no-repeat;
   z-index: 0;
 }
-.work-managment__container-info {
+.work-management .project-management__container-info {
   margin-right: 60px;
   z-index: 100;
 }
-.work-managment__title {
+.work-management .project-management__title {
   color: #212529;
   position: relative;
   background-image: url(../../img/project-underline.svg);
@@ -214,29 +238,82 @@ button {
   background-size: 69%;
   background-position: 0 105%;
 }
-.work-managment__description {
+.work-management .project-management__description {
   margin-top: 24px;
   color: #212529;
 }
-.work-managment__get-started {
+.work-management .project-management__get-started {
   margin-top: 60px;
 }
-.work-managment__try {
-  margin-top: 60px;
-}
-.work-managment__container-img {
+.work-management .project-management__container-img {
   max-width: 748px;
   width: 100%;
   height: 547px;
   background-color: #A7CEFC;
 }
-
-.mr--24 {
-  margin-right: 24px;
+.work-management .work-together__container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.work-management .work-together__container-img {
+  display: block;
+  max-width: 710px;
+  width: 100%;
+  height: 661px;
+}
+.work-management .work-together__container-info {
+  margin-left: 100px;
+}
+.work-management .work-together__title {
+  color: #212529;
+  position: relative;
+  background-image: url(../../img/work-underline.svg);
+  background-repeat: no-repeat;
+  background-size: 43%;
+  background-position: 204px 95%;
+}
+.work-management .work-together__description {
+  margin-top: 24px;
+  color: #212529;
+}
+.work-management .work-together__try {
+  margin-top: 60px;
 }
 
-.mr--60 {
-  margin-right: 60px;
+.use {
+  position: relative;
+  padding: 140px 0;
+  background-color: #043873;
+}
+.use__container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.use__container-info {
+  margin-right: 98px;
+}
+.use__title {
+  color: #FFFFFF;
+  position: relative;
+  background-image: url(../../img/extention-underline.svg);
+  background-repeat: no-repeat;
+  background-size: 57%;
+  background-position: 166px 162%;
+}
+.use__description {
+  margin-top: 24px;
+  color: #FFFFFF;
+}
+.use__btn-go {
+  margin-top: 60px;
+}
+.use__container-img {
+  max-width: 686px;
+  width: 100%;
+  height: 479px;
+  background-color: #A7CEFC;
 }
 
 .ml--auto {

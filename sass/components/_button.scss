@@ -6,11 +6,24 @@
   border-radius: 8px;
   font-size: $p2MediumFonteSize;
   line-height: $p2MediumLineHeight;
+  border: none;
+  cursor: pointer;
 
-
+  &--small {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
   &--medium {
     padding-top: 18.5px;
     padding-bottom: 18.5px;
+  }
+  &--large {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  &--px-small {
+    padding-left: 24px;
+    padding-right: 24px;
   }
    &--yellow {
     background-color: $colorYellow;

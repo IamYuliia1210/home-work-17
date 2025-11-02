@@ -1,58 +1,99 @@
 @use "../base/" as *;
 
-.work-managment {
+.work-management {
   position: relative;
   padding: 140px 0;
   background-color: $colorWhite;
-  &__container {
-    position: relative;
-    display: flex;
-    align-items: center;
-    &::before {
-      content: "";
-      position: absolute;
-      display: block;
-      top: 22%;
-      left: -15%;
-      width: 603px;
-      height: 449px;
-      background-image: url(../../img/backgroud.svg);
+   display: flex;
+   flex-direction: column;
+   gap: 100px;
+
+  .project-management {
+    &__container {
+      position: relative;
+      display: flex;
+      align-items: center;
+
+      &::before {
+        content: "";
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        transform: translate(-32%, 28%);
+        width: 603px;
+        height: 449px;
+        background-image: url(../../img/backgroud.svg);
+        background-repeat: no-repeat;
+        z-index: 0;
+      }
+    }
+
+    &__container-info {
+      margin-right: 60px;
+      z-index: 100;
+    }
+
+    &__title {
+      color: $colorBlack;
+      position: relative;
+      background-image: url(../../img/project-underline.svg);
       background-repeat: no-repeat;
-      z-index: 0;
+      background-size: 69%;
+      background-position: 0 105%;
+    }
+
+    &__description {
+      margin-top: 24px;
+      color: $colorBlack;
+    }
+
+    &__get-started {
+      margin-top: 60px;
+    }
+
+    &__container-img {
+      max-width: 748px;
+      width: 100%;
+      height: 547px;
+      background-color: $colorBlue;
     }
   }
 
-  &__container-info {
-    margin-right: 60px;
-    z-index: 100;
-  }
+  .work-together {
+    &__container {
+      position: relative;
+      display: flex;
+      align-items: center;
+    }
 
-  &__title {
-    color: $colorBlack;
-    position: relative;
-    background-image: url(../../img/project-underline.svg);
-    background-repeat: no-repeat;
-    background-size: 69%;
-    background-position: 0 105%;
-  }
+    &__container-img {
+      display: block;
+      max-width: 710px;
+      width: 100%;
+      height: 661px;
+    }
 
-  &__description {
-    margin-top: 24px;
-    color: $colorBlack;
-  }
+    &__container-info {
+      margin-left: 100px;
+    } 
 
-  &__get-started {
-    margin-top: 60px;
-  }
+    &__title {
+      color: $colorBlack;
+        position: relative;
+      background-image: url(../../img/work-underline.svg);
+      background-repeat: no-repeat;
+      background-size: 43%;
+      background-position: 204px 95%;
+    }
 
-  &__try {
-    margin-top: 60px;
-  }
+    &__description {
+      margin-top: 24px;
+      color: $colorBlack;
+    }
 
-  &__container-img {
-    max-width: 748px;
-    width: 100%;
-    height: 547px;
-    background-color: $colorBlue;
+    &__try {
+      margin-top: 60px;
+    }
   }
 }

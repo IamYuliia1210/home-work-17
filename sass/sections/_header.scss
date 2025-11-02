@@ -14,7 +14,9 @@
     width: 191px;
     height: 34px;
   }
-
+  &__navigation {
+    margin-right: 60px;
+  }
   &__list {
     display: flex;
     gap: 71px;
@@ -22,8 +24,13 @@
 
   &__item {
     position: relative;
-    padding-right: 30px;
+    
+  }
 
+  &__link {
+    color: $colorWhite;
+    text-decoration: none;
+    padding-right: 30px;
     &::after {
       content: "";
       position: absolute;
@@ -35,9 +42,7 @@
       background: url("../../img/arrow-down.svg") no-repeat;
     }
   }
-
-  &__link {
-    color: $colorWhite;
-    text-decoration: none;
+   &__login {
+    margin-right: 24px;
   }
 }

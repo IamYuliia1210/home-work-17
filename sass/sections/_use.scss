@@ -1,0 +1,42 @@
+@use "../base" as *;
+@use "../components" as *;
+
+.use {
+  position: relative;
+  padding: 140px 0;
+  background-color: $primaryColorDark;
+
+  &__container {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  &__container-info {
+    margin-right: 98px;
+  }
+
+  &__title {
+    color: $colorWhite;
+    position: relative;
+    background-image: url(../../img/extention-underline.svg);
+    background-repeat: no-repeat;
+    background-size: 57%;
+    background-position: 166px 162%;
+  }
+
+  &__description {
+    margin-top: 24px;
+    color: $colorWhite;
+  }
+
+  &__btn-go  {
+     margin-top: 60px;
+  }
+  &__container-img {
+    max-width: 686px;
+    width: 100%;
+    height: 479px;
+    background-color: $colorBlue;
+  } 
+}
