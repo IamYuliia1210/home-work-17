@@ -4,6 +4,7 @@ $colorYellow: #FFE492;
 $colorWhite: #FFFFFF;
 $colorBlue: #A7CEFC;
 $colorBlack: #212529;
+$borderColor: #2E4E73;
 
 
 /*
@@ -47,7 +48,7 @@ $p2SemiBoldFonteSize: 1rem;
 $p2MediumFonteSize: 1rem;
 $p2RegularFonteSize: $fontSize;
 /*Line height*/
-$p2SemiBoldLineHeight: auto;
+$p2SemiBoldLineHeight: 1.25;
 $p2MediumLineHeight: 1.2777777778;
 $p2RegularLineHeight: $lineHeight;
 

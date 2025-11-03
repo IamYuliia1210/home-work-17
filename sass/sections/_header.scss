@@ -14,17 +14,18 @@
     width: 191px;
     height: 34px;
   }
+
   &__navigation {
     margin-right: 60px;
   }
+  
   &__list {
     display: flex;
     gap: 71px;
   }
 
   &__item {
-    position: relative;
-    
+    position: relative; 
   }
 
   &__link {
