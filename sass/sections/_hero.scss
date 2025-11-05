@@ -34,3 +34,45 @@
   }
 
 }
+
+
+@include media-down(xxl) {
+  .hero {
+    &__container-img {
+      width: 685px;
+      height: 456px;
+    }
+  }
+}
+@include media-down(xl) {
+  .hero {
+    &__container-img {
+      width: 526px;
+      height: 350px;
+    }
+  }
+}
+
+@include media-down(md) {
+  .hero {
+    &__title  {
+      font-size: $H3FonteSize;
+    }
+
+    &__container-img {
+      width: 551px;
+      height: 367px;
+    }
+  }
+}
+@include media-down(sm) {
+  .hero {
+    &__title  {
+      font-size: $H4FonteSize;
+    }
+    &__container-img {
+      width: 286px;
+      height: 191px;
+    }
+  }
+}

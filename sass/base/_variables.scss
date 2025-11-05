@@ -2,8 +2,8 @@ $primaryColorDark: #043873;
 $primaryColorLight: #4F9CF9;
 $colorYellow: #FFE492;
 $colorWhite: #FFFFFF;
-$colorBlue: #A7CEFC;
 $colorBlack: #212529;
+$colorBlue: #A7CEFC;
 $borderColor: #2E4E73;
 
 
@@ -64,10 +64,11 @@ $p3MediumLineHeight: auto;
 $p3RegularLineHeight: 1.25;
 
 $breakpoints: (
-xs: 0,
-sm: 320px,
-md: 768px,
-lg: 1152px,
-xl: 1200px,
-xxl: 1400px
+  xs: 0,
+  sm: 320px,
+  md: 768px,
+  md-plus: 860px,
+  lg: 1152px,
+  xl: 1200px,
+  xxl: 1440px
 );

@@ -1,0 +1,173 @@
+@use "../base" as *;
+@use "../components" as *;
+
+.pricing {
+  position: relative;
+  padding: 140px 0;
+  background-color: $colorWhite;
+
+  // &__container {
+  // }
+
+  &__container-info {
+    margin-right: 18px;
+  }
+
+  &__title {
+    position: relative;
+    text-align: center;
+    color: $colorBlack;
+    z-index: 1;
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 50px;
+      transform: translate(-15px, 20px);
+      width: 320px;
+      height: 50px;
+      background-image: url(../../img/plan-underline.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      z-index: -1;
+    }
+  }
+
+  &__description {
+    text-align: center;
+    margin-top: 24px;
+    color: $colorBlack;
+  }
+
+  &__plan-slider {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    margin-top: 60px;
+  }
+
+  &__plan {
+    padding: 40px 44px;
+    border: 1px solid $colorYellow;
+    border-radius: 10px;
+  }
+
+  &__plan-type {
+    margin-bottom: 25px;
+    font-weight: 600;
+    font-size: $p1SemiBoldFonteSize;
+    line-height: $p1SemiBoldLineHeight;
+  }
+
+  &__plan-cost {
+    margin-bottom: 25px;
+  }
+
+  &__plan-description {
+    margin-bottom: 25px;
+    font-weight: 500;
+    font-size: $p2MediumFonteSize;
+    line-height: $p2MediumLineHeight;
+  }
+
+  &__plan-list {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+  }
+
+  &__plan-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: $p3RegularFonteSize;
+    line-height: $p3RegularLineHeight;
+
+    &::before {
+      content: "";
+      width: 20px;
+      height: 20px;
+      flex: 0 0 20px;
+      margin-right: 20px;
+      background-image: url(../../img/check.svg);
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &__get-started {
+    margin-top: 25px;
+  }
+
+  /* Active Cart */
+
+  &__plan--active {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: $primaryColorDark;
+  }
+
+  &__plan--active &__plan-cost {
+    color: $colorYellow;
+  }
+
+  &__plan--active &__plan-type,
+  &__plan--active &__plan-description,
+  &__plan--active &__plan-list,
+  &__plan--active &__plan-item {
+    color: $colorWhite;
+  }
+
+  &__plan--active &__get-started {
+    background-color: $primaryColorLight;
+    color: $colorWhite;
+    border: none;
+  }
+
+  &__plan--active &__plan-item {
+    &::before {
+      content: "";
+      background-image: url(../../img/yellow-check.svg);
+    }
+  }
+}
+
+@include media-down(md-plus) {
+  .pricing {
+    &__plan-container {
+      display: block;
+      position: relative;
+      width: 100%;
+      height: 752px;
+      overflow: hidden;
+    }
+
+    &__plan-slider {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translate(0, 0);
+      width: 100%;
+      height: auto;
+    }
+
+    &__plan {
+      width: 472px;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, 0);
+
+      &:nth-child(1) {
+        transform: translate(-155%, 0);
+      }
+
+      &:nth-child(3) {
+        transform: translate(55%, 0);
+      }
+    }
+  }
+}

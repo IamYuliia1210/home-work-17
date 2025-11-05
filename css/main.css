@@ -107,6 +107,15 @@ button {
   background-color: #FFE492;
   color: #043873;
 }
+.btn--pad-20 {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.btn--outline-yellow {
+  background-color: #FFFFFF;
+  border: 1px solid #FFE492;
+  color: #212529;
+}
 .btn--blue {
   background-color: #4F9CF9;
   color: #FFFFFF;
@@ -130,6 +139,21 @@ button {
   padding: 0 32px;
 }
 
+@media screen and (max-width: 1152px) {
+  .container br {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 0 20px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .container {
+    padding: 0 16px;
+  }
+}
 .header {
   height: 92px;
   background-color: #043873;
@@ -172,6 +196,17 @@ button {
   margin-right: 24px;
 }
 
+@media screen and (max-width: 1152px) {
+  .header__navigation {
+    display: none;
+  }
+}
+@media screen and (max-width: 320px) {
+  .header__logo {
+    width: 134px;
+    height: 24px;
+  }
+}
 .hero {
   padding: 140px 0;
   background-color: #043873;
@@ -204,6 +239,36 @@ button {
   background-color: #A7CEFC;
 }
 
+@media screen and (max-width: 1440px) {
+  .hero__container-img {
+    width: 685px;
+    height: 456px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .hero__container-img {
+    width: 526px;
+    height: 350px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .hero__title {
+    font-size: 3rem;
+  }
+  .hero__container-img {
+    width: 551px;
+    height: 367px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .hero__title {
+    font-size: 2rem;
+  }
+  .hero__container-img {
+    width: 286px;
+    height: 191px;
+  }
+}
 .work-management {
   position: relative;
   padding: 140px 0;
@@ -454,6 +519,146 @@ button {
   object-fit: contain;
 }
 
+.pricing {
+  position: relative;
+  padding: 140px 0;
+  background-color: #FFFFFF;
+}
+.pricing__container-info {
+  margin-right: 18px;
+}
+.pricing__title {
+  position: relative;
+  text-align: center;
+  color: #212529;
+  z-index: 1;
+}
+.pricing__title::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 50px;
+  transform: translate(-15px, 20px);
+  width: 320px;
+  height: 50px;
+  background-image: url(../../img/plan-underline.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: -1;
+}
+.pricing__description {
+  text-align: center;
+  margin-top: 24px;
+  color: #212529;
+}
+.pricing__plan-slider {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  margin-top: 60px;
+}
+.pricing__plan {
+  padding: 40px 44px;
+  border: 1px solid #FFE492;
+  border-radius: 10px;
+}
+.pricing__plan-type {
+  margin-bottom: 25px;
+  font-weight: 600;
+  font-size: 1.333333333rem;
+  line-height: 2;
+}
+.pricing__plan-cost {
+  margin-bottom: 25px;
+}
+.pricing__plan-description {
+  margin-bottom: 25px;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.2777777778;
+}
+.pricing__plan-list {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+.pricing__plan-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  font-size: 0.889rem;
+  line-height: 1.25;
+}
+.pricing__plan-item::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  flex: 0 0 20px;
+  margin-right: 20px;
+  background-image: url(../../img/check.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.pricing__get-started {
+  margin-top: 25px;
+}
+.pricing {
+  /* Active Cart */
+}
+.pricing__plan--active {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: #043873;
+}
+.pricing__plan--active .pricing__plan-cost {
+  color: #FFE492;
+}
+.pricing__plan--active .pricing__plan-type, .pricing__plan--active .pricing__plan-description, .pricing__plan--active .pricing__plan-list, .pricing__plan--active .pricing__plan-item {
+  color: #FFFFFF;
+}
+.pricing__plan--active .pricing__get-started {
+  background-color: #4F9CF9;
+  color: #FFFFFF;
+  border: none;
+}
+.pricing__plan--active .pricing__plan-item::before {
+  content: "";
+  background-image: url(../../img/yellow-check.svg);
+}
+
+@media screen and (max-width: 860px) {
+  .pricing__plan-container {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 752px;
+    overflow: hidden;
+  }
+  .pricing__plan-slider {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
+    width: 100%;
+    height: auto;
+  }
+  .pricing__plan {
+    width: 472px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+  .pricing__plan:nth-child(1) {
+    transform: translate(-155%, 0);
+  }
+  .pricing__plan:nth-child(3) {
+    transform: translate(55%, 0);
+  }
+}
 .ml--auto {
   margin-left: auto;
 }

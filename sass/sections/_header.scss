@@ -18,20 +18,21 @@
   &__navigation {
     margin-right: 60px;
   }
-  
+
   &__list {
     display: flex;
     gap: 71px;
   }
 
   &__item {
-    position: relative; 
+    position: relative;
   }
 
   &__link {
     color: $colorWhite;
     text-decoration: none;
     padding-right: 30px;
+
     &::after {
       content: "";
       position: absolute;
@@ -43,7 +44,28 @@
       background: url("../../img/arrow-down.svg") no-repeat;
     }
   }
-   &__login {
+
+  &__login {
     margin-right: 24px;
+  }
+}
+
+
+@include media-down(lg) {
+  .header {
+    &__navigation {
+      display: none;
+    }
+  }
+
+
+}
+
+@include media-down(sm) {
+  .header {
+    &__logo {
+      width: 134px;
+      height: 24px;
+    }
   }
 }

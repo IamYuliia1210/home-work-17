@@ -28,8 +28,19 @@
    &--yellow {
     background-color: $colorYellow;
     color: $primaryColorDark;
+   } 
+
+   &--pad-20 {
+    padding-left: 20px;
+    padding-right: 20px;
    }
 
+   &--outline-yellow {
+    background-color: $colorWhite;
+    border: 1px solid $colorYellow;
+    color: $colorBlack;
+
+   }
    &--blue {
      background-color: $primaryColorLight;
       color: $colorWhite;
